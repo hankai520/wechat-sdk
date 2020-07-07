@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <appender name="console-appender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{12} - %msg%n</Pattern>
+        </encoder>
+    </appender>
+    
+    <!-- 根日志配置，同时写入控制台和文件 -->
+    <root level="INFO">
+        <appender-ref ref="console-appender" />
+    </root>
+
+</configuration>

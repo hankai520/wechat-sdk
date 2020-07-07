@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>login</title>
+<script type="text/javascript" src="http://cdn.bootcss.com/sockjs-client/1.1.1/sockjs.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/stomp.js/2.3.3/stomp.js"></script>
+<script type="text/javascript">
+var socket = new SockJS('/sock');
+var stompClient = Stomp.over(socket);
+stompClient.connect({}, function(frame) {
+	stompClient.subscribe("/topic/login.success", function(message) {
+		alert('登录成功！');
+		location.href='/home?openid='+message.body;
+	});
+}, function(error) {
+	alert("STOMP error " + error);
+});
+</script>
+</head>
+<body>
+	<h2>请用微信扫码登录</h2>
+	<img alt="" th:src="${qrcode_url}">
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+<title>home</title>
+</head>
+<body>
+	<h2>已登录，欢迎光临！</h2>
+	<p> [[${weixinUser.nickname}]]，<a href="/login">退出</a> </p>
+	<img alt="" th:src="${weixinUser.headimgurl}">
+	<p><button><a th:href="${'/send_biz_progress?openid='+weixinUser.openid}">发送消息到微信</a></button></p>
+</body>
+</html>
