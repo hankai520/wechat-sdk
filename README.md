@@ -5,15 +5,15 @@ wechat-sdk
 
 本项目基于weixin4j（<https://github.com/ansitech/weixin4j>）二次开发:
 
--   [​整合了weixin4j分散的几个仓库代码](https://maven.apache.org/guides/index.html)
+-   整合了weixin4j分散的几个仓库代码
 
--   [​简化了不必要的设计模式应用，简化了代码](https://docs.spring.io/spring-boot/docs/2.2.8.RELEASE/maven-plugin/)
+-   简化了不必要的设计模式应用，简化了代码
 
--   [​简化了SDK核心公开API，隐藏了部分细节](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/htmlsingle/#boot-features-websockets)
+-   简化了SDK核心公开API，隐藏了部分细节
 
--   [基于微信平台的要求进行了适当优化（如限时处理微信消息和事件）](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/htmlsingle/#boot-features-spring-mvc-template-engines)
+-   基于微信平台的要求进行了适当优化（如限时处理微信消息和事件
 
--   [整合了示例代码，针对spring和非spring项目给出对接示例代码](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications)
+-   整合了示例代码，针对spring和非spring项目给出对接示例代码
 
  
 
@@ -44,8 +44,8 @@ install。此命令会将SDK安装到本地maven仓库，适用于单人开发�
 
 基于Spring (mvc, boot) 开发的项目接入SDK步骤:
 
-1.  [复制 weixin4j-core/src/main/resources/weixin4j.properties
-    到项目src/main/resources下](https://spring.io/guides/gs/messaging-stomp-websocket/)
+1.  复制 weixin4j-core/src/main/resources/weixin4j.properties
+    到项目src/main/resources下
 
 2.  项目pom.xml中添加依赖如下：
 
