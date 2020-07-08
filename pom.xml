@@ -2,10 +2,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.weixin4j</groupId>
+	<groupId>ren.hankai</groupId>
 	<artifactId>wechat-sdk</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
+	<name>wechat-sdk</name>
+	<description>基于weixin4j二次开发的微信平台接口Java SDK，封装公众号等接口调用。</description>
+	<url>https://github.com/hankai520/wechat-sdk</url>
 	<properties>
 		<slf4j.version>1.7.5</slf4j.version>
 		<logback.version>1.0.13</logback.version>
@@ -83,13 +86,12 @@
 	</dependencies>
 	<distributionManagement>
 		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>oss.sonatype.org</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
-			</url>
+			<id>oss.sonatype.org</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
 	<profiles>
@@ -121,15 +123,15 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/ansitech/weixin4j</url>
-		<connection>https://github.com/ansitech/weixin4j.git</connection>
-		<developerConnection>https://github.com/ansitech</developerConnection>
+		<url>https://github.com/hankai520/wechat-sdk</url>
+		<connection>git@github.com:hankai520/wechat-sdk.git</connection>
+		<developerConnection>https://github.com/hankai520/wechat-sdk</developerConnection>
 	</scm>
 	<developers>
 		<developer>
-			<name>yangqisheng</name>
-			<email>qsyang@ansitech.com</email>
-			<url>https://github.com/ansitech</url>
+			<name>hankai</name>
+			<email>john.han.kai@gmail.com</email>
+			<url>https://github.com/hankai520</url>
 		</developer>
 	</developers>
 	<build>

@@ -30,7 +30,7 @@ public interface IMessageHandler {
    *
    * @param message 已解析的消息实例
    * @return 处理结果xml
-   * @throws WeixinException
+   * @throws WeixinException 微信接口异常
    */
   String invoke(InputMessage message) throws WeixinException;
 }

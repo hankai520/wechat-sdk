@@ -176,9 +176,9 @@ public class MessageDispatcher {
   /**
    * 解析并派发消息到合适的消息处理。
    *
-   * @param req
-   * @param res
-   * @throws IOException
+   * @param req HTTP请求
+   * @param res HTTP响应
+   * @throws IOException HTTP I/O 异常
    */
   public void dispatch(final ServletRequest req, final ServletResponse res) throws IOException {
     final HttpServletRequest request = (HttpServletRequest) req;

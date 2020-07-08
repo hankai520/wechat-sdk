@@ -24,7 +24,7 @@ import java.util.Properties;
 
 /**
  * 微信平台调用基础配置
- * <p>配置参数优先级：System.getenv(name) > System.getProperty(key) > weixin4j.properties </p>
+ * <p>配置参数优先级：System.getenv(name) &gt; System.getProperty(key) &gt; weixin4j.properties </p>
  *
  * @author yangqisheng, hankai
  * @since 0.0.1
@@ -78,7 +78,6 @@ public final class Configuration {
    * 载入配置文件。
    *
    * @param inputStream 配置文件输入流，为null则从类路径加载 weixin4j.properties
-   * @return 是否载入成功
    */
   public static void load(final InputStream inputStream) {
     defaultProperty = new Properties();

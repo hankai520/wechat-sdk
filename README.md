@@ -3,7 +3,7 @@ wechat-sdk
 
 ### 项目介绍
 
-本项目基于weixin4j（<https://github.com/ansitech/weixin4j>）二次开发:
+本项目基于weixin4j（<https://github.com/ansitech/weixin4j>）二次开发（感谢原作者杨启盛作出的贡献），为了便于发布到maven中央库，调整了pom.xml中的groupId。本项目改进如下:
 
 -   整合了weixin4j分散的几个仓库代码
 
@@ -32,7 +32,7 @@ wechat-sdk
 ### 编译
 
 克隆SDK仓库后，在根目录执行 mvn clean
-install。此命令会将SDK安装到本地maven仓库，适用于单人开发或简单测试。需要发布到nexus私服的，可以自行配置本SDK的pom.xml文件自行发布到私服。
+install。此命令会将SDK安装到本地maven仓库，适用于单人开发或简单测试。需要发布到nexus私服的，可以自行配置本SDK的pom.xml文件自行发布到私服。本项目也已经发布到中央仓库，按对接步骤添加依赖可快速开始使用。
 
  
 
@@ -51,7 +51,7 @@ install。此命令会将SDK安装到本地maven仓库，适用于单人开发�
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <dependency>
-    <groupId>org.weixin4j</groupId>
+    <groupId>ren.hankai</groupId>
     <artifactId>weixin4j-spring</artifactId>
     <version>1.0.0</version>
 </dependency>

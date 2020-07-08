@@ -24,8 +24,6 @@ public class WebConfig {
    *
    * @param applicationContext spring 上下文
    * @return 模板解析器
-   * @author hankai
-   * @since Nov 8, 2016 8:44:56 AM
    */
   @Bean
   public ITemplateResolver htmlTemplateResolver(final ApplicationContext applicationContext) {
@@ -44,11 +42,7 @@ public class WebConfig {
    * 模板引擎。
    *
    * @param htmlTemplateResolver HTML模板解析器
-   * @param jsTemplateResolver JS模板解析器
-   * @param cssTemplateResolver CSS模板解析器
    * @return 模板引擎
-   * @author hankai
-   * @since Nov 8, 2016 8:45:51 AM
    */
   @Bean
   public ISpringTemplateEngine templateEngine(
@@ -66,8 +60,6 @@ public class WebConfig {
    *
    * @param templateEngine 模板引擎
    * @return 视图解析器
-   * @author hankai
-   * @since Nov 8, 2016 8:46:30 AM
    */
   @Bean
   public ViewResolver viewResolver(final ISpringTemplateEngine templateEngine) {
