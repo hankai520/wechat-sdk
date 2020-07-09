@@ -1,2 +1,2 @@
 #! /bin/sh
-mvn clean install deploy -P release
+mvn -pl 'weixin4j-core,weixin4j-spring' clean install deploy -P release
